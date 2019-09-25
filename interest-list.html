@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thoaa Admin Panel</title>
+    
+    <!-- Styles -->
+    <link href="assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/lib/unix.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        .lastalign{
+                    text-align-last: end;
+                  }
+    </style>
+</head>
+
+<body class="sidebar-hide">
+
+   <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                 <li class="label">Dashboard</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-pencil-alt"></i>Dashboard <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                          <li><a href="dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="label">User Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-user"></i>User<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="user-list.html">User List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="label">Category Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-pencil-alt"></i> Category<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="category.html">Create Category</a></li>
+                            <li><a href="category-list.html">Category List</a></li>
+                            <li><a href="sub-category.html">Create Sub Category</a></li>
+                            <li><a href="sub-category-list.html">Sub Category List</a></li>
+                        </ul>
+                    </li>
+                    <li class="label">Occupation Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-view-list-alt"></i> Occupation<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="occupation.html">Create Occupation</a></li>
+                            <li><a href="occupation-list.html">Occupation List</a></li>
+                        </ul>
+                    </li>
+                    <li class="label">Role Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-user"></i> Role<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="role.html">Role Admin Management</a></li>
+                            <li><a href="role-user.html">Role User Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="label">Interest Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid2-alt"></i> Interest<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="interest.html">Add Interest</a></li>
+                            <li><a href="interest-list.html">Interest List</a></li>
+                        </ul>
+                    </li>
+                    <li class="label">Tutorial Screen</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-panel"></i> Tutorial Screen<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="tutorial.html">Add Tutorial</a></li>
+                            <li><a href="tutorial-list.html">Tutorial List</a></li>
+                        </ul>
+                    </li>
+                      <li class="label">Event Management</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Event<span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="event.html">Add Event</a></li>
+                            <li><a href="event-list.html">Event List</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+
+
+    <div class="header">
+        <div class="pull-left">
+            <div class="logo"><a href="index.html"><span>THOAA Admin</span></a></div>
+            <div class="hamburger sidebar-toggle">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="pull-right p-r-15">
+            <ul>
+                <li class="header-icon dib"><img class="avatar-img" src="assets/images/avatar/1.jpg" alt="" /> <span class="user-avatar"> Ajay <i class="ti-angle-down f-s-10"></i></span>
+                    <div class="drop-down dropdown-profile">
+                        
+                        <div class="dropdown-content-body">
+                            <ul>
+                                <li><a href="#"><i class="ti-user"></i> <span>Profile</span></a></li>
+                               
+                                <li><a href="#"><i class="ti-power-off"></i> <span>Logout</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+     <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-r-0 title-margin-right">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h1>Hello, <span>Welcome Here</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4 p-l-0 title-margin-left">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb text-right">
+                                    <li><a href="#">Dashboard</a></li>
+                                    <li class="active">Interest List</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+                <div id="main-content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card alert">
+                                <div class="card-header pr">
+                                    <h4>Interest List </h4>
+                                    <div class="search-action">
+                                      
+                                        <div class="search-type dib">
+                                            <input class="form-control input-rounded" placeholder="search" type="text">
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table student-data-table m-t-20">
+                                            <thead>
+                                                <tr>
+                                                    <th><label><input type="checkbox" value=""></label>S.No</th>
+                                                   
+                                                    <th>Interest Name</th>
+                                                   
+                                                    <th class="lastalign">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#01</td>
+                                                    <td>
+                                                        Painting</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                              <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#02</td>
+                                                    <td>
+                                                        Photography</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#03</td>
+                                                    <td>
+                                                        Music</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#04</td>
+                                                    <td>
+                                                        Drama</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#05</td>
+                                                    <td>
+                                                        Posters</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td><label><input type="checkbox" value=""></label>#06</td>
+                                                    <td>
+                                                        Rock</td>
+                                                    <td>
+                                                      <span><a href="#" title="Edit"><i class="ti-pencil-alt color-success"></i></a></span>
+                                                        <span><a href="#" title="Delete"><i class="ti-trash color-danger"></i> </a></span>
+                                                    </td>
+                                                </tr>
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+
+                    </div>
+                    <!-- /# row -->
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="search">
+        <button type="button" class="close">×</button>
+        <form>
+            <input type="search" value="" placeholder="type keyword(s) here" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+  
+
+
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <!-- jquery vendor -->
+    <script src="assets/js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="assets/js/lib/menubar/sidebar.js"></script>
+    <script src="assets/js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="assets/js/lib/weather/weather-init.js"></script>
+    <script src="assets/js/lib/circle-progress/circle-progress.min.js"></script>
+    <script src="assets/js/lib/circle-progress/circle-progress-init.js"></script>
+    <script src="assets/js/lib/chartist/chartist.min.js"></script>
+    <script src="assets/js/lib/chartist/chartist-init.js"></script>
+    <script src="assets/js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="assets/js/lib/sparklinechart/sparkline.init.js"></script>
+    <script src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
